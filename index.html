@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pico.green.css">
+</head>
+<body>
+    <div class="nav" role="group">
+        <input type="text" placeholder="Enter nodes seperated by spaces in level order e.g. 1 2 3 5 N 4 6 11 5 55 100 7 99 120 140 will give below shown tree" id="text">
+        <button type="submit" id="submit">Show</button>
+    </div>
+    <div class="btnHold">
+        <button id="toggleHide">Show/hide Null Node</button>
+    </div>
+    
+    <div id="myDiagramDiv"
+     style="width:90vw; height:90vh; background-color: #DAE4E4;">
+    </div>
+
+    <script src="https://unpkg.com/gojs/release/go-debug.js"></script>
+    <script src="gojs_app.js"></script>
+</body>
+</html>

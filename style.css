@@ -1,0 +1,14 @@
+#toggleHide{
+    border-radius: 25px;
+    margin-block-end: 10px;
+    margin-inline: auto;
+}
+.btnHold{
+    display: flex;
+    justify-content: end;
+    /* margin: auto; */
+    /* margin-left: 50px; */
+}
+#myDiagramDiv{
+    margin: auto;
+}
