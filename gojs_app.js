@@ -56,6 +56,7 @@ while (index < arr.length) {
 console.log(par_child);
 
 function updateDiagram(){
+  console.log("showNodes:", showNodes);
   const treeobj = [] ;
   treeobj.push({ key: 0, name: arr[0] });
   for (let i = 1; i < arr.length; i++) {
@@ -64,6 +65,7 @@ function updateDiagram(){
       parent : par_child[i],
       name : arr[i],
     }
+
     if(showNodes){
       treeobj.push(obj);
     }else{
@@ -72,7 +74,7 @@ function updateDiagram(){
       }
     }
   }
-  
+  console.log(treeobj);
   myDiagram.model = new go.TreeModel(treeobj);
 }
 
@@ -82,8 +84,10 @@ submit.addEventListener("click",(event)=>{
    let str=input.value;
    let tempstr="";
    let newArr=[];
+   console.log("str=",str);
    for(let i=0;i<str.length;i++){
-      tempstr+=str[i];
+      if(str[i]!=" ") tempstr+=str[i];
+      console.log("tempstr=",tempstr,"str[i]=",str[i]);
       if(str[i]!=" " && str[i+1]===" "){
         newArr.push(tempstr);
         tempstr="";
