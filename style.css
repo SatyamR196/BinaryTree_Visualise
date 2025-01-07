@@ -3,6 +3,11 @@
     margin-block-end: 10px;
     margin-inline: auto;
 }
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
 .btnHold{
     display: flex;
     justify-content: end;
@@ -11,4 +16,14 @@
 }
 #myDiagramDiv{
     margin: auto;
+}
+body{
+    background-color: #013901;
+}
+input[type="text"]{
+    color: white;
+    /* border: 2px solid white; */
+    background-color: #013801;
+    margin-block-end: 10px;
+    margin-inline: auto;
 }
