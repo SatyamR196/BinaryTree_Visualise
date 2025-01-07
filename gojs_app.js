@@ -5,8 +5,8 @@ input.value = "1 2 3 5 N 4 6 11 5 55 100 7 99 120 140";
 
 let showNodes=false;
 toggleBtn.addEventListener("click",()=>{
-  showNodes=!showNodes;
-  console.log("showNOdes=",showNodes);
+  showNodes= (!showNodes);
+  console.log("showNodes=",showNodes);
   updateDiagram();
 });
 const myDiagram = new go.Diagram("myDiagramDiv", {
