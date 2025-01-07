@@ -36,9 +36,9 @@ myDiagram.nodeTemplate = new go.Node("Auto").add(
 //1 2 3 N N 4 6 N 5 N N 7 N
 // const arr=[1,2,3,"N","N",4,6,"N",5,"N","N",7,"N"];
 let arr=[1,2,3,5,"N",4,6,11,5,55,100,7,99,120,140];
-let par_child = { };
+let par_child = {};
 let index=0,curr=0;
-while (index < arr.length) {
+while (index < 100) {
   if(arr[index]!="N"){
     let child1 = ++curr;
     let child2 = ++curr;
@@ -53,7 +53,7 @@ while (index < arr.length) {
     index++;
   }
 }
-console.log(par_child);
+console.log("par_child obj:",par_child);
 
 function updateDiagram(){
   console.log("showNodes:", showNodes);
